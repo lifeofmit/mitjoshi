@@ -14,6 +14,9 @@
 
 				<!-- Intro -->
 					<div id="intro">
+						<div style="width: 100%; height: 7%;" id="particles-js">
+							<span style="margin-top: -33mm;" class="type1"></span>
+						</div>
 						<h1>I'm a <span class="animate"></span></h1>
 						<h2>this is My portfolio</h2>
 						<p>I automate the <span class="type0"></span> stuff with python .   <a href="https://www.instagram.com/lifeofmit/">Click me : Mit Productions</a>.</p>
@@ -217,6 +220,20 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="typed.js"></script>
+			<script src="particles.js"></script>
+			<script src="app.js"></script>
+			<script>
+				var typed = new Typed('.type1', {
+					strings: [
+						"Scroll Down",
+						"OR",
+						"Click below for Magic"
+					],
+						typeSpeed: 150,
+						backSpeed: 50,
+						loop:true
+				});
+			</script>
 			<script>
 				var typed = new Typed('.animate', {
 					strings: [
