@@ -17,11 +17,12 @@
 						<div style="width: 100%; height: 7%; margin-top: -30mm;" id="particles-js">
 							<span class="type1"></span>
 						</div>
-						<h1>I'm a <span class="animate"></span></h1>
-						<h2>this is My portfolio</h2>
-						<p>I automate the <span class="type0"></span> stuff with python .   <a href="https://www.instagram.com/lifeofmit/">Click me : Mit Productions</a>.</p>
-						<h2>Name : <span class="type"></span></h2><br />
-						
+						<div class="abc" style="text-shadow: 6px 6px 10px #000000;"> 
+							<h1>I'm a <span class="animate"></span></h1>
+							<h2>this is My portfolio</h2>
+							<p>I automate the <span class="type0"></span> stuff with python .   <a href="https://www.instagram.com/lifeofmit/">Click me : Mit Productions</a>.</p>
+							<h2>Name : <span class="type"></span></h2><br />
+						</div>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -221,8 +222,15 @@
 			<script src="assets/js/main.js"></script>
 			<script src="particles.js"></script>
 			<script src="app.js"></script>
-		
+			<script src="vanilla-tilt.min.js"></script>
 			<script src="typed.js"></script>
+			<script>
+				VanillaTilt.init(document.querySelector(".abc"), {
+					max: 25,
+					speed: 400
+				});
+
+			</script>
 			<script>
 				var typed = new Typed('.type1', {
 					strings: [
